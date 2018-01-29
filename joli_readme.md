@@ -2,7 +2,7 @@
 
 ![alt text](http://www.centreculturelirlandais.com/content/cache/content/images/old_library_slider_660_360_s_c1.jpg "Biblo'thèque")
 
-*Débuter sur Ruby on Rails n'est pas chose évidente à première vue. Il s'agit donc d'en comprendre les concepts pour mieux les appréhender. Ainsi, à travers ce readme (codé en .md, héhé) vous allez parcourir le chemin des différentes requêtes d'un utilisateur face à un site web développé sur ce langage, qui permet de créer des sites web dit "dynamiques"...*
+*Débuter sur Ruby on Rails n'est pas chose évidente à première vue. Il s'agit donc d'en comprendre les concepts pour mieux les appréhender. Ainsi, à travers ce readme (codé en markdown) vous allez parcourir le chemin des différentes requêtes d'un utilisateur face à un site web développé sur ce langage, qui permet de créer des sites web dit "dynamiques"...*
 
 PS : Pour que la lecture ne soit pas ennuyeuse, je vous ai concocté une petite histoire, pas celles des "boiboîtes" cette fois-ci, mais celle de la "Bibl'othèque"
 
@@ -15,9 +15,9 @@ En introduction de mon histoire vous êtes l'un des utilisateurs de mon site, ma
 
 ## 1. La différence entre un site statique et un site dynamique
 
-* Site web statique : site qui sera visible par l'utilisateur tel qu'il a été conçu. Les pages, hébergées sur un serveur, seront toujours présentées de la même façon. 
+* **Site web statique** : site qui sera visible par l'utilisateur tel qu'il a été conçu. Les pages, hébergées sur un serveur, seront toujours présentées de la même façon. 
 
-* Site web dynamique : un site Web dynamique est un site Web dont les pages sont générées dynamiquement à la demande. **Le code s'exécute sur un serveur**, tel que Heroku sur pour les développeurs avec des bases de données.
+* **Site web dynamique** : un site Web dynamique est un site Web dont les pages sont générées dynamiquement à la demande. **Le code s'exécute sur un serveur**, tel que Heroku sur pour les développeurs avec des bases de données.
 
 Quand le site web statique sera l'équivalent d'un musée avec des livres, toujours les mêmes, le site web dynamique sera celle d'une bibliothèque avec du mouvement !
 
@@ -108,14 +108,19 @@ Commande terminal "rails g model article". On
 ## 8. Les fonctions du CRUD
 
 Le CRUD est un acronyme pour désigner 4 opérations de base pour gérer une base de donnée : 
-1. *C*reate
-2. *R*ead
-3. *U*pdate
-4. *D*elete
+1. **C**reate
+2. **R**ead
+3. **U**pdate
+4. **D**elete
 
 Il s'agira pour l'utilisateur de faire l'une de ces opérations selon les droits accordés à celui-ci.
 
 Ainsi, dans notre histoire de Biblo'thèque vous, l'utilisteur, pourra selon les cas créer, lire, modifier voir supprimer certains livre selon les droits accordé à un utilisateur.
+
+### Plus d'informations :
+
+Retrouvez l'excellent tutoriel créé par Félix, [ici](https://www.youtube.com/watch?v=deNytSPvAxA&feature=youtu.be) qui vous fait une traduction du tutoriel officiel de Ruby On Rails, [ici](http://guides.rubyonrails.org/getting_started.html)
+
 
 
 
