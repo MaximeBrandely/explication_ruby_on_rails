@@ -12,7 +12,11 @@ Rdv sur http://localhost:3000.
 
 Le MVC = Model View Controller 
 But : monter un application web
-[logo]: http://french.railstutorial.org/images/figures/mvc_detailed-full.png "title"
+
+
+![alt text](http://french.railstutorial.org/images/figures/mvc_detailed-full.png "Logo Title Text 1")
+
+
 1. L'utilisateur demande la page sur son navigateur
 2. Le routeur envoie la requête de l'utilisateur au controleur. 
 3. Le controleur fait une demande au model. 
