@@ -3,15 +3,17 @@
 
 
 
-La différence entre un site statique et un site dynamique
+## 1. La différence entre un site statique et un site dynamique
+
 Un site statique est un site web qui sera visible par l'utilisateur tel qu'il a été conçu. Elles seront toujours présentées de la même façon. 
 Dynamique : le code s'exécute sur le serveur, tel que Heroku. 
 Rdv sur http://localhost:3000. 
 
 
 
-Le MVC = Model View Controller 
-But : monter un application web
+## 2. Le MVC = Model View Controller 
+
+* But : montrer une application web
 
 
 ![alt text](http://french.railstutorial.org/images/figures/mvc_detailed-full.png "Logo Title Text 1")
@@ -31,25 +33,31 @@ Pour le nom d'un model il faut une majuscle à la première lettre.
 Le controller va aller chercher la méthode de celui demandé.
 
 
-Les routes
+## 3. Les routes
 
-Les Bases de Données
+## 4. Les Bases de Données
+
 Une base de donnée est comme un gros tableau Excel avec plusieurs tables. Les feuilles sont parfois liées en elles.
 
 
 
-GET / POST
-La méthode "POST" du controller permet de créer dans la BDD.
-La méthode "GET" du controller permet d'avoir des données de la BDD
+## 5. GET / POST
+
+> La méthode "POST" du controller permet de créer dans la BDD.
+> La méthode "GET" du controller permet d'avoir des données de la BDD.
 
 
-Le concept de migration
-La migration sert à dire à rails de modifier la BDD. On peut d'ailleurs créer une table via le fichier dans le dossier "migrate". Il faut migrer pour aller dans la BDD.
+## 6. Le concept de migration
+
+La migration sert à dire à rails de modifier la BDD. 
+On peut d'ailleurs créer une table via le fichier dans le dossier "migrate". 
+Il faut migrer pour aller dans la BDD.
 
 
 
-Les relations entre les models des BDD
+## 7. Les relations entre les models des BDD
+
 Commande terminal "rails g model article". On  
 
 
-Les fonctions du CRUD
+## 8. Les fonctions du CRUD
