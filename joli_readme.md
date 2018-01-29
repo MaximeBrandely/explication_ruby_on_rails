@@ -1,6 +1,6 @@
 # CONCEPTS DE BASE DE RAILS : la "Biblo'thèque"
 
-<p align="center">![alt text](http://www.centreculturelirlandais.com/content/cache/content/images/old_library_slider_660_360_s_c1.jpg "Biblo'thèque")</p>
+![alt text](http://www.centreculturelirlandais.com/content/cache/content/images/old_library_slider_660_360_s_c1.jpg "Biblo'thèque")
 
 *Débuter sur Ruby on Rails n'est pas chose évidente à première vue. Il s'agit donc d'en comprendre les concepts pour mieux les appréhender. Ainsi, à travers ce readme (codé en .md, héhé) vous allez parcourir le chemin des différentes requêtes d'un utilisateur face à un site web développé sur ce langage, qui permet de créer des sites web dit "dynamiques"...*
 
