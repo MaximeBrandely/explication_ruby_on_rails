@@ -17,7 +17,7 @@ Je vous invite à parcourir les 6 points qui suivent permettant d'assimiler les 
 
 * **Site web statique** : site qui sera visible par l'utilisateur tel qu'il a été conçu. Les pages, hébergées sur un serveur, seront toujours présentées de la même façon. 
 
-* **Site web dynamique** : un site Web dynamique est un site Web dont les pages sont générées dynamiquement à la demande. **Le code s'exécute sur un serveur**, tel que Heroku sur pour les développeurs avec des bases de données.
+* **Site web dynamique** : un site Web dynamique est un site Web dont les pages sont générées dynamiquement à la demande. **Le code s'exécute sur un serveur**, tel que Heroku pour les développeurs.
 
 Quand le site web statique sera l'équivalent d'un musée avec des livres, toujours les mêmes, le site web dynamique sera celle d'une bibliothèque avec du mouvement !
 
@@ -36,18 +36,18 @@ Je vous laisse observer le chemin d'une requête d'un utilisateur sur votre site
 3. Le controlleurs fait une demande au model. 
 4. Le modele interroge la BDD
 5. La BDD renvoi la réponse
-6. Le controlleur va l'envoyer à la view
-7. La view va renvoyer cela au contrôleur
+6. Le controlleur va l'envoyer à la view. Pour le coup, le controller va envoyer la donnée à la view pour imbriquer les données dans la page user.html.erb.
+7. La view va renvoyer cela au contrôleur.
 8. Le controlleur le renvoi  l'utilisateur
 
 Et sous forme imagée cela donnerait :
 
 1. Vous, l'utilisateur, vous êtes face à une bibliothèque, une base de donnée, et vous demandez un certain livre (requête) à la personne à l'accueil (le routeur).
 2. Cette personne de l'accueil va transmettre le message au "controller" le livre que vous souhaitez et va aussi lui souffler le type de livre qu'il s'agit. Lui choisira de chercher ou non le livre en question. En attendant, vous restez devant la bibliothèque à vous fumer un clope car votre demande a été traitée et vous aurez rapidement un retour sur votre demande.
-3. Le controlleur va ensuite demander le livre au gardien de la bibliothèque (le model) qui a, lui seul, accès à aux nombreux livres a méticuleusement rangé dans le coffre fort des livres (la base de donnée)
-4. Le model va entrer les indications de l'utilisateur dans le boitier électronique du coffre fort.
-5. Si le livre est trouvé, le coffre fort va donner ce livre au model qui va le donner au controlleur.
-6. Le controlleur va ensuite envoyer le livre au service des coffrets pour que le livre soit bien présenté dans un beau coffret. Pour le coup, le controller va envoyer la donner à la view pour imbriquer les données dans la page user.html.erb.
+3. Le controlleur va ensuite demander le livre l'un des gardiens (les models) d'une partie bibliothèque qui ont, eux seuls, accès aux nombreux livres méticuleusement rangés dans le coffre fort des livres (la base de donnée). Attention, tous ont accès au coffre fort mais une fois à l'intérieur chacun a sa partie !
+4. L'un des model va entrer les indications de l'utilisateur dans le moteur de recherche du coffre fort, "Biblo'ogle".
+5. Si le livre est trouvé, le coffre fort va donner ce livre au model en question, qui va le donner au controlleur.
+6. Le controlleur va ensuite envoyer le livre au service des coffrets pour que le livre soit bien présenté dans un beau coffret.
 7. Le service des coffrets le redonne au controlleur une fois le coffret terminé.
 8. Le controlleur va donner le coffret à l'utilsateur.
 
