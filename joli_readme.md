@@ -117,9 +117,12 @@ Il s'agira pour l'utilisateur de faire l'une de ces opérations selon les droits
 
 Ainsi, dans notre histoire de Biblo'thèque vous, l'utilisteur, pourra selon les cas créer, lire, modifier voir supprimer certains livre selon les droits accordé à un utilisateur.
 
+
 ### Plus d'informations :
 
-Retrouvez l'excellent tutoriel créé par Félix, [ici](https://www.youtube.com/watch?v=deNytSPvAxA&feature=youtu.be) qui vous fait une traduction du tutoriel officiel de Ruby On Rails, [ici](http://guides.rubyonrails.org/getting_started.html)
+Retrouvez l'excellent tutoriel créé par Félix, [ici](https://www.youtube.com/watch?v=deNytSPvAxA&feature=youtu.be) qui vous fait une traduction du tutoriel officiel de Ruby On Rails, [ici](http://guides.rubyonrails.org/getting_started.html) !
+
+###Merci de m'avoir lu jusqu'au bout chers correcteurs !
 
 
 
