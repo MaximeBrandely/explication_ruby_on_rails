@@ -8,9 +8,9 @@ PS : Pour que la lecture ne soit pas ennuyeuse, je vous ai concocté une petite 
 
 -----------------------------------------------
 
-Je vous invite à parcourir les 6 points qui suivent permettant d'assimiler les concepts de base de Ruby On rails (ça va le faire !) : 
+En introduction de mon histoire mettez vous dans la peau d'une personne qui souhaite avoir un livre dans une bibliothèque.
 
-En introduction de mon histoire vous êtes l'un des utilisateurs de mon site, mais vous n'êtes devant un 
+Je vous invite à parcourir les 6 points qui suivent permettant d'assimiler les concepts de base de Ruby On rails (ça va le faire !) : 
 
 
 ## 1. La différence entre un site statique et un site dynamique
@@ -38,7 +38,7 @@ Je vous laisse observer le chemin d'une requête d'un utilisateur sur votre site
 5. La BDD renvoi la réponse
 6. Le controlleur va l'envoyer à la view
 7. La view va renvoyer cela au contrôleur
-8. Le controleur le renvoi  l'utilisateur
+8. Le controlleur le renvoi  l'utilisateur
 
 Et sous forme imagée cela donnerait :
 
@@ -61,17 +61,17 @@ Le controller va aller chercher la méthode de celui demandé.
 
 ## 3. Les routes
 
-Les routes permettent d’interpréter les URL et d’orienter vers les bonnes actions des controlleurs. 
+Les routes permettent d’**interpréter les URL** et d’**orienter les controlleurs vers les bonnes actions à mener**. 
 
-*Du côté du code* : la configuration se trouve dans le fichier config/routes.rb ;)
+*Du côté du code* : la configuration se trouve dans le fichier config/routes.rb.
 
 
 
 ## 4. Les Bases de Données
 
-Une base de donnée est comme un gros tableau Excel avec plusieurs tables. Les feuilles sont parfois liées en elles.
+Une base de donnée est comme un **gros tableau Excel avec plusieurs tables**. Les feuilles sont parfois liées en elles.
 
-Pour imager mes propos nous pourrions dire qu'une base de données est une blibliothèque que l'on rempli de livres, 
+Pour imager mes propos nous pourrions dire qu'une base de données est le coffre fort qui renferme des livres de notre bibl'othèque 
 
 Nous savons qu'il faut une base de donnée. 
 
@@ -79,30 +79,34 @@ Nous savons qu'il faut une base de donnée.
 
 ## 5. GET / POST
 
-> La méthode "POST" du controlleur permet de créer dans la BDD.
-> La méthode "GET" du controlleur permet d'avoir des données de la BDD, sans pour autant la modifier. 
+> La méthode "POST" du controlleur permet de **créer dans la BDD.**
+> La méthode "GET" du controlleur permet d'avoir des données de la BDD, **sans pour autant les modifier**. 
 
-S'il y a bien une règle à retenir c'est celle-ci. 
 
 Plus de précision : Avec la méthode "GET" on va *piocher* une information en corrélation avec la requête de l'utilisateur. 
 
 Ainsi, imaginez que la méthode GET est l'équivalent d'un lecteur dans une bibliothèque. Il va chercher une information présente dans une base de données, la bibliothèque puis il repose le livre, la donnée.
 Alors que la méthode POST va plus être l'équivalent d'un auteur de livre qui pourra ajouter, modifier voire supprimer ses livres de la bibliothèque. Vous comprenez la logique ? 
 
-La sécurité ... 
-
 
 ## 6. Le concept de migration
 
-La migration sert à dire à rails de modifier la BDD. 
-On peut d'ailleurs créer une table via le fichier dans le dossier "migrate". 
-Il faut migrer pour aller dans la BDD.
+La migration sert à dire à rails de modifier la BDD. On dit que **ce fichier ruby est une migration**. Il permet de changer la structure de votre base de données. 
+Changer la structure d’une base de données, **c’est ajouter, supprimer ou modifier une table ou une colonne**. C’est comme remplir la première ligne d’un tableur avec le nom des colonnes. Si ces noms changent, il faut faire une migration pour changer sa structure. On peut d'ailleurs créer une table via le fichier dans le dossier "migrate". 
+
+Dans notre histoire de "Biblo'thèque" c'est le model qui sait et peut modifier l'organisation des livres du coffre fort.
+
+*Remarque :* Il faut migrer pour aller dans la BDD.
 
 
 
 ## 7. Les relations entre les models des BDD
 
-Commande terminal "rails g model article". On  
+Dans une application on aura très rapidement besoin de **"croiser" des informations** afin de relier certaines données (les articles auront des catégories par exemple). Pour cela, Rails permet de gérer des associations directement au niveau des modèles.
+
+Il y a donc plusieurs modèles dans la Biblo'thèque ayant chacun leur propre petit coffre fort. 
+
+A noter que c'est la commande "rails g model article" du terminal qui permettra d'en créer.   
 
 
 ## 8. Les fonctions du CRUD
@@ -115,14 +119,17 @@ Le CRUD est un acronyme pour désigner 4 opérations de base pour gérer une bas
 
 Il s'agira pour l'utilisateur de faire l'une de ces opérations selon les droits accordés à celui-ci.
 
-Ainsi, dans notre histoire de Biblo'thèque vous, l'utilisteur, pourra selon les cas créer, lire, modifier voir supprimer certains livre selon les droits accordé à un utilisateur.
+==> **Ainsi, dans notre histoire de Biblo'thèque vous, l'utilisateur, pourra selon les cas créer, lire, modifier voir supprimer certains livres selon les droits accordés à un utilisateur.**
 
+----------------------------------------
 
 ### Plus d'informations :
 
-Retrouvez l'excellent tutoriel créé par Félix, [ici](https://www.youtube.com/watch?v=deNytSPvAxA&feature=youtu.be) qui vous fait une traduction du tutoriel officiel de Ruby On Rails, [ici](http://guides.rubyonrails.org/getting_started.html) !
+Retrouvez l'excellent tutoriel créé par Félix, [ici](https://www.youtube.com/watch?v=deNytSPvAxA&feature=youtu.be) qui vous fait une traduction en vidéo du tutoriel officiel de Ruby On Rails, [ici](http://guides.rubyonrails.org/getting_started.html) !
 
-###Merci de m'avoir lu jusqu'au bout chers correcteurs !
+### Merci de m'avoir lu jusqu'au bout chers correcteurs !
+
+Koyote
 
 
 
